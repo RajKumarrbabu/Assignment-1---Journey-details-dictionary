@@ -1,0 +1,20 @@
+database =[['Raj', 12345], ['Kumar', 6543]] #existing database
+a= input("Enter the user name: ")
+b= int(input("Enter the password: "))
+credentials =[a,b]
+print(credentials)
+if credentials not in database:
+  database.append(credentials)
+  print("New User")
+  print(database) #to confirm the new user is added in the database
+else:
+  print("Existing User")
+Dateofjourney = input()
+Departure= input()
+arrival= input()
+Journeydetails1={'unique': credentials , 'DOJ': Dateofjourney, 'From': Departure, 'To': arrival}
+print(Journeydetails1) #to print the journey details of the customer
+if Journeydetails1 ['unique']== credentials:
+  print(Journeydetails1) #to get the data of particular user using if condition with credebtilas as unique data
+else:
+  print("No Journey Yet")
